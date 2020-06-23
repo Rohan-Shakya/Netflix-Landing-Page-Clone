@@ -1,0 +1,69 @@
+// ############ VARIABLES ########################
+$primary-color: #e50914;
+$dark-color: #141414;
+$main-color: #fff;
+$primary-dark: #000000;
+
+// ########### universal selector ###########
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// ############ BODY ##############
+body {
+  font-family: 'Arial', sans-serif;
+  --webkit-font-smoothing: antialiased;
+  background: $primary-dark;
+  color: #999;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: $main-color;
+}
+a {
+  color: $main-color;
+  text-decoration: none;
+}
+p {
+  margin: 0.5rem 0;
+}
+img {
+  width: 100%;
+}
+input::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+}
+/* Container */
+.container {
+  max-width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+/* Tabs || Accordian*/
+.tabs,
+.accordion {
+  background: $primary-dark;
+  border-bottom: 8px solid #222222;
+}
+
+.closed {
+  display: none;
+}
+
+svg {
+  fill: $main-color;
+  height: 1.5rem;
+  display: inline-block;
+}
+.svg-closed {
+  transform: rotate(45deg);
+}

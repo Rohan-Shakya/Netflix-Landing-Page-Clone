@@ -1,0 +1,264 @@
+// ########### GLOBAL VARIABLES ###############
+@import '_global';
+// ######### BUTTONS ########
+@import '_buttons';
+
+// ################### SHOWCASE #####################
+.showcase {
+  width: 100%;
+  height: 95vh;
+  position: relative;
+  background: url('../img/background.jpg') no-repeat center/cover;
+  border-bottom: 8px solid #222222;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0px 120px 250px rgba(0, 0, 0, 0.6),
+      inset 0px -50px 250px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.showcase-top {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  img {
+    width: 170px;
+  }
+}
+
+.showcase-content {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 9rem;
+  z-index: 2;
+  h1 {
+    font-weight: 700;
+    font-size: 3.8rem;
+    list-style: 1.1;
+    margin: 0 0 2rem;
+    max-width: 800px;
+  }
+  p {
+    color: $main-color;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 1.25rem;
+    margin: 0 0 2rem;
+  }
+}
+
+.showcase-form {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  .submission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+      height: 60px;
+      border: none;
+      outline: none;
+      border-radius: 3px 0 0 3px;
+      padding: 0 1rem;
+      min-width: 60vh;
+      font-size: 1rem;
+    }
+    button {
+      height: 60px;
+      border: none;
+      outline: none;
+      border-radius: 0 3px 3px 0;
+      padding: 0 1rem;
+      min-width: 30vh;
+      background: $primary-color;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      color: $main-color;
+    }
+  }
+  p {
+    color: $main-color;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
+
+// ########################### SECTION | CONTAINER ############################
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+}
+.container .left-div,
+.container .right-div {
+  text-align: left;
+  margin: auto;
+  position: relative;
+}
+.left-div h1,
+.right-div h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.left-div p,
+.right-div p {
+  color: $main-color;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+}
+.tabs > .container > img {
+  width: 90%;
+}
+.div-image {
+  position: relative;
+  z-index: 3;
+}
+video {
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  position: absolute;
+  top: 20%;
+  left: 13%;
+  z-index: 1;
+  &#watch-devices {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 80%;
+    max-width: 60%;
+  }
+}
+.story-card {
+  position: absolute;
+  border: 2px solid #222222;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $primary-dark;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 15px;
+  width: 350px;
+  img {
+    height: 5em;
+    width: auto;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    background: url(../img/download-icon.gif) no-repeat center/cover;
+  }
+}
+.story-card .story-animation-text {
+  margin-left: 1rem;
+  .text-1 {
+    color: $main-color;
+    font-weight: bold;
+  }
+  .text-2 {
+    color: #0071eb;
+    line-height: 1.2rem;
+  }
+}
+
+// ############################ ACCORDION #############################
+.accordion {
+  padding: 4rem 0;
+  .container {
+    text-align: center;
+    max-width: 850px;
+    width: 100%;
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+    }
+    .accordion-toggle {
+      text-align: left;
+    }
+  }
+}
+.accordion .showcase-form {
+  margin-top: 4rem;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1px;
+  background-color: #303030;
+  font-size: 1.2rem;
+  h2 {
+    font-weight: 500;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.faq-answer {
+  padding: 1.5rem 2rem;
+  background-color: #303030;
+  color: $main-color;
+}
+
+/* ############################### FOOTER ########################## */
+
+footer {
+  color: #5e5e5e;
+  .container {
+    max-width: 950px;
+    margin: 3rem auto;
+    h3 {
+      color: #5e5e5e;
+      font-size: 1rem;
+      margin: 2rem 0;
+      font-weight: 600;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-row-gap: 1rem;
+      font-size: 0.8rem;
+      margin-bottom: 2rem;
+      font-weight: 600;
+    }
+  }
+  span {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
+
+// ################# MEDIA QUERIES ##################
+@import '_media';

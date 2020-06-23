@@ -1,0 +1,322 @@
+// ############# FROM 948px - 1150px ########################
+@media screen and (max-width: 1150px) {
+  .showcase h1 {
+    font-size: 3.1rem;
+    font-weight: 600;
+    max-width: 600px;
+  }
+
+  .showcase-form .submission {
+    input {
+      height: 50px;
+      min-width: 40vh;
+    }
+    button {
+      height: 50px;
+      min-width: 15vh;
+      font-size: 1rem;
+    }
+  }
+}
+
+// ############# FROM 768px - 948px ########################
+@media screen and (max-width: 948px) {
+  .tabs .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .showcase-content {
+    margin-top: 7rem;
+  }
+  .showcase {
+    height: 100vh;
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .showcase-form .submission {
+    display: flex;
+    flex-direction: column;
+    input {
+      height: 50px;
+      min-width: 55vh;
+    }
+    button {
+      height: 35px;
+      padding: 0 1rem;
+      min-width: 20vh;
+      font-size: 1rem;
+      margin-top: 1.8rem;
+    }
+  }
+
+  .container .left-div,
+  .container .right-div {
+    text-align: center;
+  }
+  .left-div h1,
+  .right-div h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  .left-div p,
+  .right-div p {
+    font-size: 1.2rem;
+  }
+  .accordion .container {
+    max-width: 750px;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .faq-question {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+  }
+  .faq-answer {
+    padding: 1rem 1.5rem;
+    background-color: #303030;
+    color: $main-color;
+  }
+
+  .faq-answer p {
+    font-size: 1.3rem;
+  }
+
+  footer .container {
+    max-width: 700px;
+  }
+}
+
+// #############  FROM 560px - 768px #######################
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+  .showcase-content {
+    margin-top: 6rem;
+  }
+  .showcase-top img {
+    width: 120px;
+  }
+  .showcase-form .submission input {
+    height: 50px;
+    min-width: 75%;
+  }
+  .showcase-form p {
+    color: $main-color;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .left-div h1,
+  .right-div h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  .left-div p,
+  .right-div p {
+    font-size: 1.1rem;
+  }
+  .accordion .container h1 {
+    font-size: 2rem;
+  }
+  footer .container ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  footer .container {
+    max-width: 560px;
+  }
+}
+
+// #############  FROM 460 - 560px #######################
+@media screen and (max-width: 560px) {
+  .showcase {
+    max-height: 80vh;
+  }
+  .showcase-content {
+    margin-top: 3rem;
+    h1 {
+      max-width: 80vw;
+      font-size: 1.8rem;
+      list-style: 1.1;
+      margin: 0 0 1rem;
+    }
+    p {
+      font-size: 1rem;
+      margin: 0 0 1.5rem;
+    }
+  }
+
+  .showcase-top img {
+    width: 100px;
+  }
+
+  .showcase-form .submission input {
+    height: 40px;
+    min-width: 80%;
+  }
+  .showcase-form p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .tabs.downloading .left-div {
+    margin-bottom: 2rem;
+  }
+  .left-div h1,
+  .right-div h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .left-div p,
+  .right-div p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .story-card {
+    width: 300px;
+    img {
+      height: 3em;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .story-card .story-animation-text .text-1 {
+    font-size: 0.9rem;
+  }
+  .story-card .story-animation-text .text-2 {
+    font-size: 0.8rem;
+  }
+
+  .accordion .container h1 {
+    font-size: 1.8rem;
+  }
+  footer .container {
+    max-width: 90%;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+// #############  FROM 400px - 460px #######################
+@media screen and (max-width: 460px) {
+  .accordion .container h1 {
+    font-size: 1.4rem;
+  }
+  .faq-question {
+    font-size: 0.7rem;
+  }
+
+  .faq-answer p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .story-card {
+    width: 80%;
+  }
+  svg {
+    height: 1rem;
+  }
+}
+
+// #############  FROM 360px - 400px #######################
+@media screen and (max-width: 400px) {
+  .showcase-content h1 {
+    margin: 0 0 1rem;
+  }
+  .showcase-content p {
+    margin: 0 0 1rem;
+  }
+
+  .tabs.downloading .left-div {
+    margin-bottom: 2rem;
+  }
+  .left-div h1,
+  .right-div h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .left-div p,
+  .right-div p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  .story-card {
+    width: 70%;
+    img {
+      height: 2em;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .story-card .story-animation-text .text-1 {
+    font-size: 0.6rem;
+  }
+  .story-card .story-animation-text .text-2 {
+    font-size: 0.6rem;
+  }
+}
+
+// #############  FROM 0 - 360px #######################
+@media screen and (max-width: 360px) {
+  .showcase {
+    max-height: 90vh;
+  }
+  .showcase-content {
+    margin-top: 2rem;
+    h1 {
+      font-size: 1.5rem;
+      list-style: 1.1;
+      margin: 0 0 0.7rem;
+    }
+    p {
+      font-size: 1rem;
+      margin: 0 0 1rem;
+    }
+  }
+
+  .showcase-form p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .accordion .container h1 {
+    font-size: 1.3rem;
+  }
+  .faq-question {
+    font-size: 0.6rem;
+  }
+  .story-card {
+    width: 80%;
+  }
+  svg {
+    height: 0.8rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .showcase-form .submission input {
+    max-width: 80vh;
+  }
+}
